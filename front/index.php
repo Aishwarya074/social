@@ -175,7 +175,7 @@
     }
 
     .cta-section {
-      background: linear-gradient(135deg, #66ccff 0%, #0099ff 100%);
+      background: linear-gradient(135deg, #66ccff 0%, #87c2e9ff 100%);
       color: white;
       padding: 4rem 1rem;
       text-align: center;
@@ -237,6 +237,17 @@
       right: 30px;
       z-index: 999;
     }
+    html, body {
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+main {
+  flex: 1;
+}
+
   </style>
 </head>
 
@@ -426,10 +437,55 @@
     </div>
     </div>
     </div>
+<footer class="pt-5 pb-4 text-white" style="background-color: #2f2f2f;">
+  <div class="container">
+    <div class="row text-center text-md-start">
 
-      <footer>
-        <small>&copy; 2025 Social Service Platform — Made with ❤️</small>
-      </footer>
+      <!-- About -->
+      <div class="col-md-4 mb-4">
+        <h4 class="fw-bold mb-3">SocialService</h4>
+        <p style="font-size: 1.1rem;">
+          Empowering communities through support, compassion, and collective action. Make a difference every day.
+        </p>
+        <div class="d-flex justify-content-center justify-content-md-start gap-3 mt-3">
+          <a href="#" class="text-white fs-4"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="text-white fs-4"><i class="bi bi-twitter-x"></i></a>
+          <a href="#" class="text-white fs-4"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="text-white fs-4"><i class="bi bi-youtube"></i></a>
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="col-md-4 mb-4">
+        <h4 class="fw-bold mb-3">Quick Links</h4>
+        <ul class="list-unstyled" style="font-size: 1.1rem;">
+          <li class="mb-2"><a href="about.php" class="text-white text-decoration-none">About Us</a></li>
+          <li class="mb-2"><a href="contact.php" class="text-white text-decoration-none">Contact</a></li>
+          <li class="mb-2"><a href="register.php" class="text-white text-decoration-none">Register</a></li>
+          <li class="mb-2"><a href="login.php" class="text-white text-decoration-none">Login</a></li>
+        </ul>
+      </div>
+
+      <!-- Newsletter -->
+      <div class="col-md-4 mb-4">
+        <h4 class="fw-bold mb-3">Subscribe</h4>
+        <p style="font-size: 1.1rem;">Get updates on our latest initiatives and success stories.</p>
+        <form class="d-flex">
+          <input type="email" class="form-control me-2" placeholder="Your email" aria-label="Email">
+          <button class="btn btn-outline-light" type="submit"><i class="bi bi-envelope-fill"></i></button>
+        </form>
+      </div>
+
+    </div>
+
+    <hr class="border-light" />
+
+    <div class="text-center pt-3" style="font-size: 1.05rem;">
+      <small>&copy; 2025 Social Service Platform — Made with ❤️ to inspire change.</small>
+    </div>
+  </div>
+</footer>
+
 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
