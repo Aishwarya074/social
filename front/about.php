@@ -172,7 +172,7 @@
 
 <section class="hero-section">
   <h1>About Social Service Platform</h1>
-  <p>Connecting communities, empowering change, and creating hope for those who need it most.</p>
+  <p>Connecting communities, empowering change, and creating hope for those who need it     most.</p>
 </section>
 
 <section class="container info-cards mb-5">
