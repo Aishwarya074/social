@@ -437,28 +437,28 @@ main {
     </div>
     </div>
     </div>
-<footer class="pt-5 pb-4 text-white" style="background-color: #2f2f2f;">
-  <div class="container">
-    <div class="row text-center text-md-start">
-
-      <!-- About -->
-      <div class="col-md-4 mb-4">
-        <h4 class="fw-bold mb-3">SocialService</h4>
-        <p style="font-size: 1.1rem;">
-          Empowering communities through support, compassion, and collective action. Make a difference every day.
+<footer class="pt-5 pb-4 text-white" style="background-color: #343a40;">
+  <div class="container-lg">
+    <div class="row text-center text-md-start align-items-start">
+      
+      <!-- Column 1: About -->
+      <div class="col-md-4 mb-5">
+        <h3 class="fw-bold mb-3">🌟 SocialService</h3>
+        <p class="fs-5">
+          Empowering lives through support, compassion, and kindness. Together we create change.
         </p>
-        <div class="d-flex justify-content-center justify-content-md-start gap-3 mt-3">
-          <a href="#" class="text-white fs-4"><i class="bi bi-facebook"></i></a>
-          <a href="#" class="text-white fs-4"><i class="bi bi-twitter-x"></i></a>
-          <a href="#" class="text-white fs-4"><i class="bi bi-instagram"></i></a>
-          <a href="#" class="text-white fs-4"><i class="bi bi-youtube"></i></a>
+        <div class="d-flex justify-content-center justify-content-md-start gap-4 mt-4">
+          <a href="#" class="text-white fs-3"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="text-white fs-3"><i class="bi bi-twitter-x"></i></a>
+          <a href="#" class="text-white fs-3"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="text-white fs-3"><i class="bi bi-linkedin"></i></a>
         </div>
       </div>
 
-      <!-- Quick Links -->
-      <div class="col-md-4 mb-4">
-        <h4 class="fw-bold mb-3">Quick Links</h4>
-        <ul class="list-unstyled" style="font-size: 1.1rem;">
+      <!-- Column 2: Quick Links -->
+      <div class="col-md-4 mb-5">
+        <h4 class="fw-semibold mb-3">Quick Links</h4>
+        <ul class="list-unstyled fs-5">
           <li class="mb-2"><a href="about.php" class="text-white text-decoration-none">About Us</a></li>
           <li class="mb-2"><a href="contact.php" class="text-white text-decoration-none">Contact</a></li>
           <li class="mb-2"><a href="register.php" class="text-white text-decoration-none">Register</a></li>
@@ -466,25 +466,28 @@ main {
         </ul>
       </div>
 
-      <!-- Newsletter -->
-      <div class="col-md-4 mb-4">
-        <h4 class="fw-bold mb-3">Subscribe</h4>
-        <p style="font-size: 1.1rem;">Get updates on our latest initiatives and success stories.</p>
-        <form class="d-flex">
+      <!-- Column 3: Newsletter -->
+      <div class="col-md-4 mb-5">
+        <h4 class="fw-semibold mb-3">Stay Updated</h4>
+        <p class="fs-5">Join our newsletter to get the latest updates and stories.</p>
+        <form class="d-flex mt-3">
           <input type="email" class="form-control me-2" placeholder="Your email" aria-label="Email">
-          <button class="btn btn-outline-light" type="submit"><i class="bi bi-envelope-fill"></i></button>
+          <button class="btn btn-light px-3" type="submit"><i class="bi bi-envelope-fill"></i></button>
         </form>
       </div>
 
     </div>
 
-    <hr class="border-light" />
+    <hr class="border-light mt-5" />
 
-    <div class="text-center pt-3" style="font-size: 1.05rem;">
-      <small>&copy; 2025 Social Service Platform — Made with ❤️ to inspire change.</small>
+    <!-- Copyright -->
+    <div class="text-center mt-3 fs-6">
+      <small>&copy; 2025 Social Service Platform — Built with ❤️ for a better tomorrow.</small>
     </div>
   </div>
 </footer>
+
+
 
 
 
