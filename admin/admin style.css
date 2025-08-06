@@ -1,0 +1,73 @@
+
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f9fc;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  background-color: #e3f2fd !important;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  color: #0275d8 !important;
+}
+
+.container h3 {
+  color: #0275d8;
+  border-bottom: 2px solid #cce5ff;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.table {
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.table thead th {
+  background-color: #d9edf7;
+  color: #0275d8;
+}
+
+.table tbody tr:hover {
+  background-color: #f1faff;
+}
+
+.btn {
+  border-radius: 4px;
+}
+
+.btn-sm {
+  font-size: 0.8rem;
+  padding: 4px 8px;
+}
+
+.btn-success {
+  background-color: #5cb85c;
+  border-color: #4cae4c;
+}
+
+.btn-danger {
+  background-color: #d9534f;
+  border-color: #d43f3a;
+}
+
+.btn-primary {
+  background-color: #0275d8;
+  border-color: #025aa5;
+}
+
+.form-control,
+.form-select {
+  border-radius: 4px;
+}
+
+img.rounded {
+  border: 2px solid #d9edf7;
+}
