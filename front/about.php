@@ -59,6 +59,7 @@
       margin: 0 auto;
       font-weight: 500;
       opacity: 0.9;
+      
     }
     /* Mission & Vision Cards */
     .info-cards .card {
