@@ -275,7 +275,7 @@
             <div class="col-md-4">
               <div class="feature-card text-center p-3 shadow rounded-4">
                 <a href="report.php" class="btn btn-light me-3 shadow">
-                <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=600&q=80" alt="Report" class="feature-image">
+                <img src="https://www.creativefabrica.com/wp-content/uploads/2023/08/24/Photography-Camera-Location-Logo-Graphics-77595874-1.jpg" alt="Report" class="feature-image">
                 <i class="bi bi-camera-video feature-icon"></i>
                 
                     <h4>Photo & Location Reporting</h4>
