@@ -59,7 +59,6 @@
       margin: 0 auto;
       font-weight: 500;
       opacity: 0.9;
-      
     }
     /* Mission & Vision Cards */
     .info-cards .card {
@@ -160,7 +159,7 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto gap-3">
         <li class="nav-item"><a class="nav-link active" href="index.php">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="about.php">About Us</a></li>
+        <li class="btn btn-outline-primary rounded-pill px-4 fw-semibold"><a class="nav-link" href="about.php">About Us</a></li>
         <li class="nav-item"><a class="nav-link" href="contact.php">Contact</a></li>
         <li class="nav-item"><a class="nav-link" href="login.php">Login</a></li>
         <li class="nav-item"><a class="nav-link" href="register.php">Register</a></li>
@@ -172,8 +171,15 @@
 
 <section class="hero-section">
   <h1>About Social Service Platform</h1>
-  <p>Connecting communities, empowering change, and creating hope for those who need it     most.</p>
+  <p>Connecting communities, empowering change, and creating hope for those who need it most.</p>
 </section>
+
+<section class="py-5" style="background-color: #eef7ff;">
+  <div class="container">
+    <div class="row text-center mb-4">
+      <h2 class="fw-bold text-primary"><u>What We Stand For</u></h2><br><br><br><br>
+    </div>
+    <div class="row g-4">
 
 <section class="container info-cards mb-5">
   <div class="row justify-content-center g-4">
@@ -200,6 +206,10 @@
     </div>
   </div>
 </section>
+  
+
+
+
 
 <section class="team-section container">
   <h2>Meet Our Team</h2>
@@ -207,32 +217,32 @@
     <div class="col-sm-6 col-md-4 col-lg-3">
       <div class="team-member">
         <img src="" alt="Jane Doe" />
-        <h4>Jane Doe</h4>
-        <p class="position">Founder & CEO</p>
+        <h4>Prasad Shete</h4>
+       <b> <p class="position">Founder & CEO</p></b>
         <p class="bio">Passionate about social impact and community building, Jane leads our mission with dedication and heart.</p>
       </div>
     </div>
     <div class="col-sm-6 col-md-4 col-lg-3">
       <div class="team-member">
         <img src="" alt="John Smith" />
-        <h4>John Smith</h4>
-        <p class="position">CTO</p>
+        <h4>Aishwarya Bharsawade</h4>
+        <b><p class="position">CTO</p></b>
         <p class="bio">Tech visionary driving our platform’s innovation and user-friendly experience.</p>
       </div>
     </div>
     <div class="col-sm-6 col-md-4 col-lg-3">
       <div class="team-member">
         <img src="" alt="Emily Johnson" />
-        <h4>Emily Johnson</h4>
-        <p class="position">Community Manager</p>
+        <h4>Pradnya Paikrao</h4>
+       <b> <p class="position">Community Manager</p></b>
         <p class="bio">Connecting volunteers and donors, Emily ensures our community stays engaged and empowered.</p>
       </div>
     </div>
     <div class="col-sm-6 col-md-4 col-lg-3">
       <div class="team-member">
         <img src="" alt="Michael Brown" />
-        <h4>Michael Brown</h4>
-        <p class="position">Operations Lead</p>
+        <h4>Aarti Nivale</h4>
+       <b> <p class="position">Operations Lead</p></b>
         <p class="bio">Efficient and organized, Michael keeps everything running smoothly behind the scenes.</p>
       </div>
     </div>
@@ -240,9 +250,52 @@
 </section>
 
 
-<footer>
-  <small>&copy; 2025 Social Service Platform — Made with ❤️</small>
+<footer class="text-white pt-5" style="background: linear-gradient(to right, #007bff, #00bfff);">
+  <div class="container">
+    <div class="row text-center text-md-start">
+      
+      <div class="col-md-4 mb-4">
+        <h5 class="fw-bold">SocialService</h5>
+        <p>Empowering communities through compassion, food, and clothing support. Join us in making a change.</p>
+        <div class="d-flex justify-content-center justify-content-md-start gap-3">
+          <a href="#" class="text-white"><i class="bi bi-facebook fs-4"></i></a>
+          <a href="#" class="text-white"><i class="bi bi-twitter-x fs-4"></i></a>
+          <a href="#" class="text-white"><i class="bi bi-instagram fs-4"></i></a>
+          <a href="#" class="text-white"><i class="bi bi-linkedin fs-4"></i></a>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <h5 class="fw-bold">Quick Links</h5>
+        <ul class="list-unstyled">
+          <li><a href="about.php" class="text-white text-decoration-none">About Us</a></li>
+          <li><a href="contact.php" class="text-white text-decoration-none">Contact</a></li>
+          <li><a href="register.php" class="text-white text-decoration-none">Register</a></li>
+          <li><a href="login.php" class="text-white text-decoration-none">Login</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <h5 class="fw-bold">Newsletter</h5>
+        <form>
+          <div class="input-group">
+            <input type="email" class="form-control" placeholder="Your email" aria-label="Email">
+            <button class="btn btn-light" type="submit"><i class="bi bi-envelope-fill"></i></button>
+          </div>
+        </form>
+        <small class="d-block mt-2">Stay updated with our mission.</small>
+      </div>
+
+    </div>
+
+    <hr class="border-light" />
+
+    <div class="text-center pb-3">
+      <small>&copy; 2025 Social Service Platform — Made with ❤ for a better world.</small>
+    </div>
+  </div>
 </footer>
+
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>

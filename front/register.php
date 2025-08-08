@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,21 +24,32 @@
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg fixed-top">
   <div class="container">
-    <a class="navbar-brand" href="index.php">SocialService</a>
+    <a class="navbar-brand fw-bold text-primary" href="index.php">SocialService</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto gap-3">
-        <li class="nav-item"><a class="nav-link active" href="index.php">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="about.php">About Us</a></li>
-        <li class="nav-item"><a class="nav-link" href="contact.php">Contact</a></li>
-        <li class="nav-item"><a class="nav-link" href="login.php">Login</a></li>
-        <li class="nav-item"><a class="nav-link" href="register.php">Register</a></li>
+      <ul class="navbar-nav ms-auto align-items-center gap-3">
+        <li class="nav-item">
+          <a class="nav-link text-primary hover-bg rounded-pill px-3 fw-semibold" href="index.php">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-primary hover-bg rounded-pill px-3 fw-semibold" href="about.php">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-primary hover-bg rounded-pill px-3 fw-semibold" href="contact.php">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-primary hover-bg rounded-pill px-3 fw-semibold " href="login.php">Login</a>
+        </li>
+        <li class="nav-item">
+          <a class=" btn btn-outline-primary rounded-pill px-4 fw-semibold" href="register.php">Register</a>
+        </li>
       </ul>
     </div>
   </div>
 </nav>
+
 
 
 <!-- Register Form -->
@@ -73,11 +86,56 @@
 </section>
 
 <!-- Footer -->
-<footer class="mt-5">
-  <small>&copy; 2025 Social Service Platform — Building Better Communities</small>
+<footer class="text-white pt-5" style="background: linear-gradient(to right, #007bff, #00bfff);">
+  <div class="container">
+    <div class="row text-center text-md-start">
+      
+      <div class="col-md-4 mb-4">
+        <h5 class="fw-bold">SocialService</h5>
+        <p>Empowering communities through compassion, food, and clothing support. Join us in making a change.</p>
+        <div class="d-flex justify-content-center justify-content-md-start gap-3">
+          <a href="#" class="text-white"><i class="bi bi-facebook fs-4"></i></a>
+          <a href="#" class="text-white"><i class="bi bi-twitter-x fs-4"></i></a>
+          <a href="#" class="text-white"><i class="bi bi-instagram fs-4"></i></a>
+          <a href="#" class="text-white"><i class="bi bi-linkedin fs-4"></i></a>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <h5 class="fw-bold">Quick Links</h5>
+        <ul class="list-unstyled">
+          <li><a href="about.php" class="text-white text-decoration-none">About Us</a></li>
+          <li><a href="contact.php" class="text-white text-decoration-none">Contact</a></li>
+          <li><a href="register.php" class="text-white text-decoration-none">Register</a></li>
+          <li><a href="login.php" class="text-white text-decoration-none">Login</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <h5 class="fw-bold">Newsletter</h5>
+        <form>
+          <div class="input-group">
+            <input type="email" class="form-control" placeholder="Your email" aria-label="Email">
+            <button class="btn btn-light" type="submit"><i class="bi bi-envelope-fill"></i></button>
+          </div>
+        </form>
+        <small class="d-block mt-2">Stay updated with our mission.</small>
+      </div>
+
+    </div>
+
+    <hr class="border-light" />
+
+    <div class="text-center pb-3">
+      <small>&copy; 2025 Social Service Platform — Made with ❤ for a better world.</small>
+    </div>
+  </div>
 </footer>
+
 
 <!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
+

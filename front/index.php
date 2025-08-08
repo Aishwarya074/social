@@ -114,20 +114,13 @@
     }
 
     .feature-card {
-      background: white;
-      border-radius: 20px;
-      padding: 2.5rem 2rem;
-      box-shadow: 0 8px 25px rgba(0,0,0,0.08);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      background-color: #fff;
+      transition: transform 0.3s ease;
       height: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-    }
+      }
     .feature-card:hover {
-      transform: translateY(-15px);
-      box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+      transform: translateY(-5px);
+      
     }
     .feature-icon {
       font-size: 4.5rem;
@@ -140,12 +133,9 @@
     }
     .feature-image {
       width: 100%;
-      max-height: 180px;
+      height: 200px;
       object-fit: cover;
-      border-radius: 15px;
-      margin-bottom: 1rem;
-      transition: transform 0.3s ease;
-      box-shadow: 0 8px 20px rgba(0, 153, 255, 0.1);
+      border-radius: 12px;
     }
     .feature-card:hover .feature-image {
       transform: scale(1.05);
@@ -175,7 +165,7 @@
     }
 
     .cta-section {
-      background: linear-gradient(135deg, #66ccff 0%, #87c2e9ff 100%);
+      background: linear-gradient(135deg, #66ccff 0%, #0099ff 100%);
       color: white;
       padding: 4rem 1rem;
       text-align: center;
@@ -238,17 +228,6 @@
       right: 30px;
       z-index: 999;
     }
-    html, body {
-  height: 100%;
-}
-body {
-  display: flex;
-  flex-direction: column;
-}
-main {
-  flex: 1;
-}
-
   </style>
 </head>
 
@@ -261,7 +240,7 @@ main {
           </button> 
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto gap-3">
-              <li class="nav-item"><a class="nav-link active" href="index.php">Home</a></li>
+              <li class="btn btn-outline-primary rounded-pill px-4 fw-semibold"><a class="nav-link active" href="index.php">Home</a></li>
               <li class="nav-item"><a class="nav-link" href="about.php">About Us</a></li>
               <li class="nav-item"><a class="nav-link" href="contact.php">Contact</a></li>
               <li class="nav-item"><a class="nav-link" href="login.php">Login</a></li>
@@ -294,7 +273,7 @@ main {
           <div class="row g-4 justify-content-center">
           
             <div class="col-md-4">
-              <div class="feature-card">
+              <div class="feature-card text-center p-3 shadow rounded-4">
                 <a href="report.php" class="btn btn-light me-3 shadow">
                 <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=600&q=80" alt="Report" class="feature-image">
                 <i class="bi bi-camera-video feature-icon"></i>
@@ -306,7 +285,7 @@ main {
             </div>
             
             <div class="col-md-4">
-              <div class="feature-card">
+              <div class="feature-card text-center p-3 shadow rounded-4">
                 <a href="food_donate.php" class="btn btn-light me-3 shadow">
                 <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=600&q=80" alt="Food" class="feature-image">
                 <i class="bi bi-basket2 feature-icon"></i>
@@ -315,15 +294,23 @@ main {
                  </a>
               </div>
             </div>
-          
-            <div class="col-md-4">
-              <div class="feature-card">
-                <a href="cloth_donate.php" class="btn btn-light me-3 shadow">
-                <img src="https://static.vecteezy.com/system/resources/previews/008/342/404/non_2x/clothes-donating-flat-design-long-shadow-glyph-icon-donation-box-with-t-shirt-used-clothes-charity-silhouette-illustration-vector.jpg?auto=format&fit=crop&w=600&q=80" alt="Cloth" class="feature-image">
-                <i class="bi bi-bag-heart feature-icon"></i>
-                <h4>Cloth Donation</h4>
-                <p>Donate wearable clothes in good condition to shelters and NGOs.</p>
-                </a>
+         <div class="col-md-4">
+        <div class="feature-card text-center p-3 shadow rounded-4">
+          <a href="cloth_donate.php" class="btn btn-light me-3 shadow">
+            <img src="https://static.vecteezy.com/system/resources/previews/018/991/609/original/people-giving-a-donation-box-with-clothes-for-charity-and-solidarity-vector.jpg"
+              alt="Cloth Donation"
+              class="feature-image img-fluid rounded mb-3">
+            <i class="bi bi-bag-heart feature-icon fs-1 text-primary"></i>
+            <h4 class="mt-2">Cloth Donation</h4>
+            <p class="text-secondary">
+              Donate wearable clothes in good condition to shelters and NGOs.
+            </p>
+          </a>
+        </div>
+      </div>
+
+
+            
               </div>
             </div>
           </div>
@@ -438,58 +425,52 @@ main {
     </div>
     </div>
     </div>
-<footer class="pt-5 pb-4 text-white" style="background-color: #343a40;">
-  <div class="container-lg">
-    <div class="row text-center text-md-start align-items-start">
+
+      <footer class="text-white pt-5" style="background: linear-gradient(to right, #007bff, #00bfff);">
+  <div class="container">
+    <div class="row text-center text-md-start">
       
-      <!-- Column 1: About -->
-      <div class="col-md-4 mb-5">
-        <h3 class="fw-bold mb-3">🌟 SocialService</h3>
-        <p class="fs-5">
-          Empowering lives through support, compassion, and kindness. Together we create change.
-        </p>
-        <div class="d-flex justify-content-center justify-content-md-start gap-4 mt-4">
-          <a href="#" class="text-white fs-3"><i class="bi bi-facebook"></i></a>
-          <a href="#" class="text-white fs-3"><i class="bi bi-twitter-x"></i></a>
-          <a href="#" class="text-white fs-3"><i class="bi bi-instagram"></i></a>
-          <a href="#" class="text-white fs-3"><i class="bi bi-linkedin"></i></a>
+      <div class="col-md-4 mb-4">
+        <h5 class="fw-bold">SocialService</h5>
+        <p>Empowering communities through compassion, food, and clothing support. Join us in making a change.</p>
+        <div class="d-flex justify-content-center justify-content-md-start gap-3">
+          <a href="#" class="text-white"><i class="bi bi-facebook fs-4"></i></a>
+          <a href="#" class="text-white"><i class="bi bi-twitter-x fs-4"></i></a>
+          <a href="#" class="text-white"><i class="bi bi-instagram fs-4"></i></a>
+          <a href="#" class="text-white"><i class="bi bi-linkedin fs-4"></i></a>
         </div>
       </div>
 
-      <!-- Column 2: Quick Links -->
-      <div class="col-md-4 mb-5">
-        <h4 class="fw-semibold mb-3">Quick Links</h4>
-        <ul class="list-unstyled fs-5">
-          <li class="mb-2"><a href="about.php" class="text-white text-decoration-none">About Us</a></li>
-          <li class="mb-2"><a href="contact.php" class="text-white text-decoration-none">Contact</a></li>
-          <li class="mb-2"><a href="register.php" class="text-white text-decoration-none">Register</a></li>
-          <li class="mb-2"><a href="login.php" class="text-white text-decoration-none">Login</a></li>
+      <div class="col-md-4 mb-4">
+        <h5 class="fw-bold">Quick Links</h5>
+        <ul class="list-unstyled">
+          <li><a href="about.php" class="text-white text-decoration-none">About Us</a></li>
+          <li><a href="contact.php" class="text-white text-decoration-none">Contact</a></li>
+          <li><a href="register.php" class="text-white text-decoration-none">Register</a></li>
+          <li><a href="login.php" class="text-white text-decoration-none">Login</a></li>
         </ul>
       </div>
 
-      <!-- Column 3: Newsletter -->
-      <div class="col-md-4 mb-5">
-        <h4 class="fw-semibold mb-3">Stay Updated</h4>
-        <p class="fs-5">Join our newsletter to get the latest updates and stories.</p>
-        <form class="d-flex mt-3">
-          <input type="email" class="form-control me-2" placeholder="Your email" aria-label="Email">
-          <button class="btn btn-light px-3" type="submit"><i class="bi bi-envelope-fill"></i></button>
+      <div class="col-md-4 mb-4">
+        <h5 class="fw-bold">Newsletter</h5>
+        <form>
+          <div class="input-group">
+            <input type="email" class="form-control" placeholder="Your email" aria-label="Email">
+            <button class="btn btn-light" type="submit"><i class="bi bi-envelope-fill"></i></button>
+          </div>
         </form>
+        <small class="d-block mt-2">Stay updated with our mission.</small>
       </div>
 
     </div>
 
-    <hr class="border-light mt-5" />
+    <hr class="border-light" />
 
-    <!-- Copyright -->
-    <div class="text-center mt-3 fs-6">
-      <small>&copy; 2025 Social Service Platform — Built with ❤️ for a better tomorrow.</small>
+    <div class="text-center pb-3">
+      <small>&copy; 2025 Social Service Platform — Made with ❤ for a better world.</small>
     </div>
   </div>
 </footer>
-
-
-
 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
