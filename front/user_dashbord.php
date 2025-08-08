@@ -186,7 +186,6 @@
       font-weight: 700;
       font-size: 2.8rem;
       margin-bottom: 1rem;
-      
     }
 
     footer {
