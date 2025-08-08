@@ -73,10 +73,55 @@
 </section>
 
 <!-- Footer -->
-<footer class="mt-5">
-  <small>&copy; 2025 Social Service Platform — Building Better Communities</small>
-</footer>
+<footer class="pt-5 pb-4 text-white" style="background-color: #343a40;">
+  <div class="container-lg">
+    <div class="row text-center text-md-start align-items-start">
+      
+      
+      <div class="col-md-4 mb-5">
+        <h3 class="fw-bold mb-3">🌟 SocialService</h3>
+        <p class="fs-5">
+          Empowering lives through support, compassion, and kindness. Together we create change.
+        </p>
+        <div class="d-flex justify-content-center justify-content-md-start gap-4 mt-4">
+          <a href="#" class="text-white fs-3"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="text-white fs-3"><i class="bi bi-twitter-x"></i></a>
+          <a href="#" class="text-white fs-3"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="text-white fs-3"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
 
+      <!-- Column 2: Quick Links -->
+      <div class="col-md-4 mb-5">
+        <h4 class="fw-semibold mb-3">Quick Links</h4>
+        <ul class="list-unstyled fs-5">
+          <li class="mb-2"><a href="about.php" class="text-white text-decoration-none">About Us</a></li>
+          <li class="mb-2"><a href="contact.php" class="text-white text-decoration-none">Contact</a></li>
+          <li class="mb-2"><a href="register.php" class="text-white text-decoration-none">Register</a></li>
+          <li class="mb-2"><a href="login.php" class="text-white text-decoration-none">Login</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 3: Newsletter -->
+      <div class="col-md-4 mb-5">
+        <h4 class="fw-semibold mb-3">Stay Updated</h4>
+        <p class="fs-5">Join our newsletter to get the latest updates and stories.</p>
+        <form class="d-flex mt-3">
+          <input type="email" class="form-control me-2" placeholder="Your email" aria-label="Email">
+          <button class="btn btn-light px-3" type="submit"><i class="bi bi-envelope-fill"></i></button>
+        </form>
+      </div>
+
+    </div>
+
+    <hr class="border-light mt-5" />
+
+    <!-- Copyright -->
+    <div class="text-center mt-3 fs-6">
+      <small>&copy; 2025 Social Service Platform — Built with ❤️ for a better tomorrow.</small>
+    </div>
+  </div>
+</footer>
 <!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>

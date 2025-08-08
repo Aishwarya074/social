@@ -1,4 +1,14 @@
 
+
+
+
+
+
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -441,7 +451,7 @@ main {
   <div class="container-lg">
     <div class="row text-center text-md-start align-items-start">
       
-      <!-- Column 1: About -->
+      
       <div class="col-md-4 mb-5">
         <h3 class="fw-bold mb-3">🌟 SocialService</h3>
         <p class="fs-5">
@@ -557,5 +567,4 @@ main {
 
 </body>
 </html>
-
 
