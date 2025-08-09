@@ -222,7 +222,7 @@
         <img src="" alt=Prasad Shete" />
         <h4>Prasad Shete</h4>
        <b> <p class="position">Founder & CEO</p></b><br>
-        <p class="bio"></p>Leads with vision and heart.</p>
+        <p class="bio"></p>Leading with vision and a compassionate heart.</p>
       </div>
     </div>
     <div class="col-sm-6 col-md-4 col-lg-3">
@@ -230,7 +230,7 @@
         <img src="" alt="Aishwarya Bharsawade" />
         <h4>Aishwarya Bharsawade</h4>
        <b> <p class="position">CTO</p></b><br>
-        <p class="bio"> Creates smart tech solutions.</p>
+        <p class="bio"> Innovates with  smart tech solutions.</p>
       </div>
     </div>
     <div class="col-sm-6 col-md-4 col-lg-3">

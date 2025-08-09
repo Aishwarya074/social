@@ -100,7 +100,7 @@
     .hero-section .btn.btn-light:hover {
       background: #007bff;
       color: white;
-      box-shadow: 0 12px 30px rgba(6, 81, 245, 0.7);
+      box-shadow: 0 12px 30px rgba(0, 123, 255, 0.7);
       transform: translateY(-3px);
     }
     .hero-section .btn-outline-light {
@@ -423,6 +423,8 @@
     </div>
     </div>
 
+
+
       <footer class="text-white pt-5" style="background: linear-gradient(to right, #00bfff, #007bff);">
   <div class="container">
     <div class="row text-center text-md-start"> 
@@ -468,6 +470,8 @@
     </div>
   </div>
 </footer>
+
+
 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
@@ -536,5 +540,4 @@
 
 </body>
 </html>
-
 
