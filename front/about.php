@@ -104,6 +104,9 @@
       box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
       transition: box-shadow 0.3s ease, transform 0.3s ease;
       margin-bottom: 2.5rem;
+      width: 270px;  
+      height: 280px; 
+      margin: auto;
     }
     .team-member:hover {
       box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
@@ -216,34 +219,34 @@
   <div class="row justify-content-center g-4">
     <div class="col-sm-6 col-md-4 col-lg-3">
       <div class="team-member">
-        <img src="" alt="Jane Doe" />
+        <img src="" alt=Prasad Shete" />
         <h4>Prasad Shete</h4>
-       <b> <p class="position">Founder & CEO</p></b>
-        <p class="bio">Passionate about social impact and community building, Jane leads our mission with dedication and heart.</p>
+       <b> <p class="position">Founder & CEO</p></b><br>
+        <p class="bio"></p>Leads with vision and heart.</p>
       </div>
     </div>
     <div class="col-sm-6 col-md-4 col-lg-3">
       <div class="team-member">
-        <img src="" alt="John Smith" />
+        <img src="" alt="Aishwarya Bharsawade" />
         <h4>Aishwarya Bharsawade</h4>
-        <b><p class="position">CTO</p></b>
-        <p class="bio">Tech visionary driving our platform’s innovation and user-friendly experience.</p>
+       <b> <p class="position">CTO</p></b><br>
+        <p class="bio"> Creates smart tech solutions.</p>
       </div>
     </div>
     <div class="col-sm-6 col-md-4 col-lg-3">
       <div class="team-member">
-        <img src="" alt="Emily Johnson" />
+        <img src="" alt="Pradnya Paikrao" />
         <h4>Pradnya Paikrao</h4>
-       <b> <p class="position">Community Manager</p></b>
-        <p class="bio">Connecting volunteers and donors, Emily ensures our community stays engaged and empowered.</p>
+       <b> <p class="position">Community Manager</p></b><br><br>
+        <p class="bio">Builds strong and happy connections.</p>
       </div>
     </div>
     <div class="col-sm-6 col-md-4 col-lg-3">
       <div class="team-member">
-        <img src="" alt="Michael Brown" />
+        <img src="" alt="Aarti Nivale" />
         <h4>Aarti Nivale</h4>
-       <b> <p class="position">Operations Lead</p></b>
-        <p class="bio">Efficient and organized, Michael keeps everything running smoothly behind the scenes.</p>
+       <b> <p class="position">Operations Lead</p></b><br><br>
+        <p class="bio">Keeps everything running smoothly .</p>
       </div>
     </div>
   </div>

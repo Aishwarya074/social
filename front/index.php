@@ -100,7 +100,7 @@
     .hero-section .btn.btn-light:hover {
       background: #007bff;
       color: white;
-      box-shadow: 0 12px 30px rgba(0, 123, 255, 0.7);
+      box-shadow: 0 12px 30px rgba(6, 81, 245, 0.7);
       transform: translateY(-3px);
     }
     .hero-section .btn-outline-light {
@@ -129,7 +129,7 @@
       transition: color 0.3s ease;
     }
     .feature-card:hover .feature-icon {
-      color: #0056b3;
+      color: #2c8ae8ff;
     }
     .feature-image {
       width: 100%;
