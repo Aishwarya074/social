@@ -256,10 +256,10 @@
           <h1>Empower Your Community</h1>
           <p class="lead">Connect with those in need and make a difference by reporting and donating effortlessly.</p>
           <div>
-            <a href="report.php" class="btn btn-light me-3 shadow">
+            <a href="login.php" class="btn btn-light me-3 shadow">
               <i class="bi bi-camera-fill me-2"></i>Report Needy Person
             </a>
-            <a href="donate.php" class="btn btn-outline-light shadow">
+            <a href="login.php" class="btn btn-outline-light shadow">
               <i class="bi bi-box-seam me-2"></i>Donate Leftover Food
             </a>
           </div>
@@ -274,7 +274,7 @@
           
             <div class="col-md-4">
               <div class="feature-card text-center p-3 shadow rounded-4">
-                <a href="report.php" class="btn btn-light me-3 shadow">
+                <a href="login.php" class="btn btn-light me-3 shadow">
                 <img src="https://static.vecteezy.com/system/resources/previews/015/311/212/non_2x/camera-photo-photography-lens-picture-location-pin-map-search-find-navigation-logo-design-vector.jpg" alt="Report" class="feature-image">
                 <i class="bi bi-camera-video feature-icon"></i>
                 
@@ -286,7 +286,7 @@
             
             <div class="col-md-4">
               <div class="feature-card text-center p-3 shadow rounded-4">
-                <a href="food_donate.php" class="btn btn-light me-3 shadow">
+                <a href="login.php" class="btn btn-light me-3 shadow">
                 <img src="https://images.creativemarket.com/0.1.0/ps/5060999/1820/1213/m1/fpnw/wm1/bjxpv4v2r17ncqokg9eadvsvxocrcej7g9lkiasaoggtdtujatnnazhqtl7paqof-.jpg?1537171780&s=f9388165d7feab2a224db28e4694b2c5" alt="Food" class="feature-image">
                 <i class="bi bi-basket2 feature-icon"></i>
                 <h4>Leftover Food Donation</h4>
@@ -296,7 +296,7 @@
             </div>
          <div class="col-md-4">
         <div class="feature-card text-center p-3 shadow rounded-4">
-          <a href="cloth_donate.php" class="btn btn-light me-3 shadow">
+          <a href="login.php" class="btn btn-light me-3 shadow">
             <img src="https://cdn1.vectorstock.com/i/1000x1000/36/25/clothes-donation-icon-on-white-background-simple-vector-28223625.jpg"
               alt="Cloth Donation"
               class="feature-image img-fluid rounded mb-3">

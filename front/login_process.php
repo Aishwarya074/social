@@ -36,7 +36,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             $_SESSION['user_name'] = $user['name'];
 
             // Redirect to home or dashboard
-            header("Location: index.php");
+            header("Location: user_dashbord.php");
             exit();
         } else {
             echo "<script>alert('Incorrect password'); window.location.href='login.php';</script>";
