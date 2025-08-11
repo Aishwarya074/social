@@ -1,3 +1,14 @@
+<?php
+session_start();
+
+// Prevent caching
+header("Cache-Control: no-cache, no-store, must-revalidate"); // HTTP 1.1
+header("Pragma: no-cache"); // HTTP 1.0
+header("Expires: 0"); // Proxies
+
+// If already logged in, redirect to dashboard
+
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -58,7 +69,7 @@
 <
 <nav class="navbar navbar-expand-lg fixed-top">
   <div class="container">
-    <a class="navbar-brand fw-bold text-primary" href="index.php">SocialService</a>
+    <a class="navbar-brand fw-bold text-primary" href="login.php">SocialService</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -164,5 +175,5 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
-  -->
+
 

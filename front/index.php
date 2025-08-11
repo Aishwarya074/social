@@ -1,3 +1,12 @@
+<?php
+session_start();
+
+// Prevent caching
+header("Cache-Control: no-store, no-cache, must-revalidate, max-age=0");
+header("Cache-Control: post-check=0, pre-check=0", false);
+header("Pragma: no-cache");
+header("Expires: Sat, 01 Jan 2000 00:00:00 GMT");
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -294,12 +303,9 @@
          <div class="col-md-4">
         <div class="feature-card text-center p-3 shadow rounded-4">
 
-          <a href="login.php" class="btn btn-light me-3 shadow">
-            <img src="https://cdn1.vectorstock.com/i/1000x1000/36/25/clothes-donation-icon-on-white-background-simple-vector-28223625.jpg"
-
-          <a href="cloth_donate.php" class="btn btn-light me-3 shadow">
+          
+          <a href="login.html" class="btn btn-light me-3 shadow">
             <img src="https://www.shutterstock.com/shutterstock/photos/1109506814/display_1500/stock-vector-clothes-donating-glyph-icon-charity-silhouette-symbol-donation-box-with-t-shirt-used-clothes-1109506814.jpg"
-
               alt="Cloth Donation"
               class="feature-image img-fluid rounded mb-3">
             <i class="bi bi-bag-heart feature-icon fs-1 text-primary"></i>
