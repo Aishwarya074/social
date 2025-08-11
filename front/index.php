@@ -427,8 +427,8 @@
     </div>
 
       <footer class="text-white pt-5" style="background: linear-gradient(to right, #007bff, #00bfff);">
-  <div class="container">
-    <div class="row text-center text-md-start">
+      <div class="container">
+      <div class="row text-center text-md-start">
       
       <div class="col-md-4 mb-4">
         <h5 class="fw-bold">SocialService</h5>
