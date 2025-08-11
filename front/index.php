@@ -129,12 +129,12 @@
       transition: color 0.3s ease;
     }
     .feature-card:hover .feature-icon {
-      color: #0056b3;
+      color: #2c8ae8ff;
     }
     .feature-image {
       width: 100%;
       height: 200px;
-      object-fit: cover;
+      object-fit: contain;
       border-radius: 12px;
     }
     .feature-card:hover .feature-image {
@@ -165,7 +165,7 @@
     }
 
     .cta-section {
-      background: linear-gradient(135deg, #66ccff 0%, #0099ff 100%);
+      background: linear-gradient(135deg, #b7e3f9ff 0%, #0099ff 100%);
       color: white;
       padding: 4rem 1rem;
       text-align: center;
@@ -271,19 +271,16 @@
         <div class="container">
           <h2 class="section-title">Platform Features</h2>
           <div class="row g-4 justify-content-center">
-          
             <div class="col-md-4">
               <div class="feature-card text-center p-3 shadow rounded-4">
                 <a href="login.php" class="btn btn-light me-3 shadow">
                 <img src="https://static.vecteezy.com/system/resources/previews/015/311/212/non_2x/camera-photo-photography-lens-picture-location-pin-map-search-find-navigation-logo-design-vector.jpg" alt="Report" class="feature-image">
                 <i class="bi bi-camera-video feature-icon"></i>
-                
                     <h4>Photo & Location Reporting</h4>
                     <p>Snap photos and tag locations of people in need to notify NGOs instantly.</p>
                   </a>
               </div>
             </div>
-            
             <div class="col-md-4">
               <div class="feature-card text-center p-3 shadow rounded-4">
                 <a href="login.php" class="btn btn-light me-3 shadow">
@@ -291,13 +288,18 @@
                 <i class="bi bi-basket2 feature-icon"></i>
                 <h4>Leftover Food Donation</h4>
                 <p>Schedule pickup for extra food to help feed those in need.</p>
-                 </a>
+                </a>
               </div>
             </div>
          <div class="col-md-4">
         <div class="feature-card text-center p-3 shadow rounded-4">
+
           <a href="login.php" class="btn btn-light me-3 shadow">
             <img src="https://cdn1.vectorstock.com/i/1000x1000/36/25/clothes-donation-icon-on-white-background-simple-vector-28223625.jpg"
+
+          <a href="cloth_donate.php" class="btn btn-light me-3 shadow">
+            <img src="https://www.shutterstock.com/shutterstock/photos/1109506814/display_1500/stock-vector-clothes-donating-glyph-icon-charity-silhouette-symbol-donation-box-with-t-shirt-used-clothes-1109506814.jpg"
+
               alt="Cloth Donation"
               class="feature-image img-fluid rounded mb-3">
             <i class="bi bi-bag-heart feature-icon fs-1 text-primary"></i>
@@ -426,9 +428,16 @@
     </div>
     </div>
 
+
       <footer class="text-white pt-5" style="background: linear-gradient(to right, #007bff, #00bfff);">
       <div class="container">
       <div class="row text-center text-md-start">
+
+
+      <footer class="text-white pt-5" style="background: linear-gradient(to right, #00bfff, #007bff);">
+  <div class="container">
+    <div class="row text-center text-md-start"> 
+
       
       <div class="col-md-4 mb-4">
         <h5 class="fw-bold">SocialService</h5>
@@ -471,6 +480,8 @@
     </div>
   </div>
 </footer>
+
+
 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
@@ -539,5 +550,4 @@
 
 </body>
 </html>
-
 

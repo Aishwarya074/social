@@ -1,9 +1,11 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Login - Social Service Platform</title>
+
 
   <!-- External CSS -->
   <link rel="stylesheet" href="style.css" />
@@ -15,6 +17,15 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
 
   <!-- Google Fonts -->
+
+  <link rel="stylesheet" href="style.css" />
+
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700&display=swap" rel="stylesheet" />
 
   <style>
@@ -44,7 +55,7 @@
 </head>
 <body>
 
-<!-- Navbar -->
+<
 <nav class="navbar navbar-expand-lg fixed-top">
   <div class="container">
     <a class="navbar-brand fw-bold text-primary" href="index.php">SocialService</a>
@@ -73,7 +84,7 @@
   </div>
 </nav>
 
-<!-- Login Form Section -->
+
 <section class="py-5 mt-5">
   <div class="container mt-5 pt-5">
     <div class="row justify-content-center">
@@ -102,7 +113,7 @@
   </div>
 </section>
 
-<!-- Footer -->
+
 <footer class="text-white pt-5 mt-5" style="background: linear-gradient(to right, #007bff, #00bfff);">
   <div class="container">
     <div class="row text-center text-md-start">
@@ -149,7 +160,9 @@
   </div>
 </footer>
 
-<!-- Bootstrap JS -->
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+  -->
+
