@@ -18,7 +18,7 @@
   <div class="container">
     <a class="navbar-brand text-primary fw-bold" href="index.html">Social Service</a>
     <div class="ms-auto">
-      <a href="dashboard.php" class="btn btn-outline-primary me-2">Dashboard</a>
+      <a href="user_dashbord.php" class="btn btn-outline-primary me-2">Dashboard</a>
       <a href="logout.php" class="btn btn-outline-danger">Logout</a>
     </div>
   </div>
