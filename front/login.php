@@ -16,57 +16,22 @@ header("Expires: 0"); // Proxies
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Login - Social Service Platform</title>
-
-
-  <!-- External CSS -->
   <link rel="stylesheet" href="style.css" />
-
-  <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
-  
-  <!-- Bootstrap Icons -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
-
-  <!-- Google Fonts -->
-
   <link rel="stylesheet" href="style.css" />
-
-
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
-  
-
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
-
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700&display=swap" rel="stylesheet" />
-
   <style>
-    body {
-      font-family: 'Poppins', sans-serif;
-      background: #f8f9fa;
-    }
-
-    .navbar {
-      background: #ffffff;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-    }
-
-    .hover-bg:hover {
-      background-color: rgba(0, 123, 255, 0.1);
-    }
-
-    .card {
-      background: #ffffff;
-      border: none;
-    }
-
-    .footer-links a:hover {
-      text-decoration: underline;
-    }
+    body {font-family: 'Poppins', sans-serif;background: #f8f9fa;}
+    .navbar {background: #ffffff;box-shadow: 0 2px 4px rgba(0,0,0,0.05);}
+    .hover-bg:hover {background-color: rgba(0, 123, 255, 0.1);}
+    .card {background: #ffffff;border: none;}
+    .footer-links a:hover {text-decoration: underline;}
   </style>
 </head>
 <body>
-
-<
 <nav class="navbar navbar-expand-lg fixed-top">
   <div class="container">
     <a class="navbar-brand fw-bold text-primary" href="login.php">SocialService</a>
@@ -94,8 +59,6 @@ header("Expires: 0"); // Proxies
     </div>
   </div>
 </nav>
-
-
 <section class="py-5 mt-5">
   <div class="container mt-5 pt-5">
     <div class="row justify-content-center">
@@ -123,12 +86,9 @@ header("Expires: 0"); // Proxies
     </div>
   </div>
 </section>
-
-
 <footer class="text-white pt-5 mt-5" style="background: linear-gradient(to right, #007bff, #00bfff);">
   <div class="container">
     <div class="row text-center text-md-start">
-      
       <div class="col-md-4 mb-4">
         <h5 class="fw-bold">SocialService</h5>
         <p>Empowering communities through compassion, food, and clothing support. Join us in making a change.</p>
@@ -139,7 +99,6 @@ header("Expires: 0"); // Proxies
           <a href="#" class="text-white"><i class="bi bi-linkedin fs-4"></i></a>
         </div>
       </div>
-
       <div class="col-md-4 mb-4">
         <h5 class="fw-bold">Quick Links</h5>
         <ul class="list-unstyled footer-links">
@@ -149,7 +108,6 @@ header("Expires: 0"); // Proxies
           <li><a href="login.php" class="text-white text-decoration-none">Login</a></li>
         </ul>
       </div>
-
       <div class="col-md-4 mb-4">
         <h5 class="fw-bold">Newsletter</h5>
         <form>
@@ -160,20 +118,13 @@ header("Expires: 0"); // Proxies
         </form>
         <small class="d-block mt-2">Stay updated with our mission.</small>
       </div>
-
     </div>
-
     <hr class="border-light" />
-
     <div class="text-center pb-3">
       <small>&copy; 2025 Social Service Platform — Made with ❤ for a better world.</small>
     </div>
   </div>
 </footer>
-
-
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
-
-
