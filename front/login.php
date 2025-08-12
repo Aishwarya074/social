@@ -2,14 +2,67 @@
 session_start();
 
 // Prevent caching
-header("Cache-Control: no-cache, no-store, must-revalidate"); // HTTP 1.1
-header("Pragma: no-cache"); // HTTP 1.0
-header("Expires: 0"); // Proxies
+header("Cache-Control: no-cache, no-store, must-revalidate");
+header("Pragma: no-cache");
+header("Expires: 0");
 
-// If already logged in, redirect to dashboard
+// Redirect if already logged in
+// if (isset($_SESSION['user_id'])) {
+//     header("Location: ".($_SESSION['user_type'] == 'admin' ? 'admin_dashboard.php' : 'user_dashboard.php'));
+//     exit();
+// }
 
+// DB connection
+$conn = new mysqli("localhost", "root", "", "service");
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
+$login_error = "";
+
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    $email = trim($_POST['email']);
+    $password = $_POST['password'];
+
+    // Check in users table (adjust columns to match your actual table structure)
+    $stmt = $conn->prepare("SELECT id, name,email, password, 'user' AS user_type FROM users WHERE email = ?");
+    if (!$stmt) {
+        die("Prepare failed: " . $conn->error);
+    }
+    $stmt->bind_param("s", $email);
+    $stmt->execute();
+    $result = $stmt->get_result();
+    $user = $result->fetch_assoc();
+    $stmt->close();
+
+    // If not found, check in admins table (adjust columns as needed)
+    if (!$user) {
+        $stmt = $conn->prepare("SELECT id, username, password, 'admin' AS user_type FROM admins WHERE email = ?");
+        if (!$stmt) {
+            die("Prepare failed: " . $conn->error);
+        }
+        $stmt->bind_param("s", $email);
+        $stmt->execute();
+        $result = $stmt->get_result();
+        $user = $result->fetch_assoc();
+        $stmt->close();
+    }
+
+    if ($user && password_verify($password, $user['password'])) {
+        $_SESSION['id'] = $user['id'] ?? $user['id']; // Use whichever ID exists
+        $_SESSION['name'] = $user['name']; // Changed from 'name' to 'username'
+        $_SESSION['email'] = $user['email'];
+        $_SESSION['user_type'] = $user['user_type'];
+        
+        header("Location: ".($_SESSION['user_type'] == 'admin' ? 'admin_dashboard.php' : 'user_dashboard.php'));
+        exit();
+    } else {
+        $login_error = "Invalid email or password";
+    }
+}
+
+$conn->close();
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -29,6 +82,7 @@ header("Expires: 0"); // Proxies
     .hover-bg:hover {background-color: rgba(0, 123, 255, 0.1);}
     .card {background: #ffffff;border: none;}
     .footer-links a:hover {text-decoration: underline;}
+    .error-message {color: #dc3545; font-size: 0.875rem;}
   </style>
 </head>
 <body>
@@ -65,7 +119,10 @@ header("Expires: 0"); // Proxies
       <div class="col-md-6 col-lg-5">
         <div class="card shadow rounded-4 p-4">
           <h2 class="text-center mb-4 text-primary">Login</h2>
-          <form action="login_process.php" method="POST">
+          <?php if (!empty($login_error)): ?>
+            <div class="alert alert-danger"><?php echo $login_error; ?></div>
+          <?php endif; ?>
+          <form action="login.php" method="POST">
             <div class="mb-3">
               <label for="email" class="form-label fw-semibold">Email address</label>
               <input type="email" class="form-control rounded-pill" id="email" name="email" placeholder="example@email.com" required>
