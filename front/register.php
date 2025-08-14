@@ -1,5 +1,4 @@
 
-<!--
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,21 +6,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Register - Social Service Platform</title>
 
-  <!-- External CSS --
+  <!-- External CSS -->
   <link rel="stylesheet" href="style.css" />
 
-  <!-- Bootstrap CSS --
+  <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
 
-  <!-- Bootstrap Icons --
+  <!-- Bootstrap Icons -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
 
-  <!-- Google Fonts --
+  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700&display=swap" rel="stylesheet" />
 </head>
 <body>
 
-<!-- Navbar --
+<!-- Navbar -->
 <nav class="navbar navbar-expand-lg fixed-top">
   <div class="container">
     <a class="navbar-brand fw-bold text-primary" href="index.php">SocialService</a>
@@ -52,7 +51,7 @@
 
 
 
-<!-- Register Form --
+<!-- Register Form -->
 <section class="py-5 mt-5">
   <div class="container">
     <div class="row justify-content-center">
@@ -140,7 +139,7 @@
 -->
 
 
-
+<!--
 
 <!DOCTYPE html>
 <html lang="en">
@@ -149,11 +148,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Register - Social Service Platform</title>
 
-  <!-- Bootstrap CSS -->
+  <!-- Bootstrap CSS --
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <!-- Bootstrap Icons -->
+  <!-- Bootstrap Icons --
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
-  <!-- Font Awesome -->
+  <!-- Font Awesome --
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
   <style>
@@ -219,7 +218,7 @@
 </head>
 <body>
 
-<!-- Navbar -->
+<!-- Navbar --
 <nav class="navbar navbar-expand-lg fixed-top bg-light shadow-sm">
   <div class="container">
     <a class="navbar-brand fw-bold text-primary" href="index.php">SocialService</a>
@@ -239,7 +238,7 @@
 </nav>
 
 <main class="pt-5">
-  <!-- Register Form -->
+  <!-- Register Form --
   <section class="py-5 mt-5">
     <div class="container">
       <div class="row justify-content-center">
@@ -273,7 +272,7 @@
   </section>
 </main>
 
-<!-- Footer -->
+<!-- Footer --
 <footer>
   <div class="container">
     <div class="content-box text-center">
@@ -298,7 +297,7 @@
   </div>
 </footer>
 
-<!-- Bootstrap JS -->
+<!-- Bootstrap JS --
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
