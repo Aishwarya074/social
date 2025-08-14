@@ -1,7 +1,8 @@
+
 <?php
 session_start();
 
-// DB connection
+// 1. DB connection
 $servername = "localhost";
 $username = "root";
 $password = "";
@@ -9,52 +10,45 @@ $dbname = "service";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 
-// Check connection
+// 2. Check connection
 if ($conn->connect_error) {
-    die("Client DB Connection failed: " . $conn->connect_error);
+    die("Connection failed: " . $conn->connect_error);
 }
 
-// Only allow POST requests
+// 3. Check for POST request
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    // Sanitize and collect input data
-    $name     = trim($_POST['name']);
-    $email    = trim($_POST['email']);
+    // 4. Sanitize input
+    $email = trim($_POST['email']);
     $password = $_POST['password'];
 
-    // Validate inputs
-    if (empty($name) || empty($email) || empty($password)) {
-        die("All fields are required.");
-    }
+    // 5. Use prepared statement
+    $stmt = $conn->prepare("SELECT id, name, password FROM users WHERE email = ?");
+    $stmt->bind_param("s", $email);
+    $stmt->execute();
+    $result = $stmt->get_result();
 
-    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        die("Invalid email format.");
-    }
+    // 6. Check user and password
+    if ($result->num_rows == 1) {
+        $user = $result->fetch_assoc();
 
-    // Hash password
-    $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
+        if (password_verify($password, $user['password'])) {
+            // Set session variables
+            $_SESSION['user_id'] = $user['id'];
+            $_SESSION['user_name'] = $user['name'];
 
-    // Prepare statement
-    $stmt = $conn->prepare("INSERT INTO users (name, email, password) VALUES (?, ?, ?)");
-    
-    if (!$stmt) {
-        die("Prepare failed: " . $conn->error);
-    }
-
-    // Bind parameters
-    $stmt->bind_param("sss", $name, $email, $hashedPassword);
-
-    // Execute
-    if ($stmt->execute()) {
-        header('Location: login.php?success=1');
-        exit();
+            // Redirect to home or dashboard
+            header("Location: user_dashbord.php");
+            exit();
+        } else {
+            echo "<script>alert('Incorrect password'); window.location.href='login.php';</script>";
+        }
     } else {
-        echo "Something went wrong. " . $stmt->error;
+        echo "<script>alert('No account found with that email'); window.location.href='login.php';</script>";
     }
 
     $stmt->close();
 } else {
-    http_response_code(405);
-    echo "Method not allowed.";
+    echo "Invalid request.";
 }
 
 $conn->close();
