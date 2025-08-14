@@ -1,3 +1,4 @@
+
 <?php
 session_start();
 
@@ -63,6 +64,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 $conn->close();
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -88,7 +90,7 @@ $conn->close();
 <body>
 <nav class="navbar navbar-expand-lg fixed-top">
   <div class="container">
-    <a class="navbar-brand fw-bold text-primary" href="login.php">SocialService</a>
+    <a class="navbar-brand fw-bold text-primary" href="index.php">SocialService</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -122,7 +124,7 @@ $conn->close();
           <?php if (!empty($login_error)): ?>
             <div class="alert alert-danger"><?php echo $login_error; ?></div>
           <?php endif; ?>
-          <form action="login.php" method="POST">
+          <form action="login_process.php" method="POST">
             <div class="mb-3">
               <label for="email" class="form-label fw-semibold">Email address</label>
               <input type="email" class="form-control rounded-pill" id="email" name="email" placeholder="example@email.com" required>
@@ -184,4 +186,6 @@ $conn->close();
 </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
+

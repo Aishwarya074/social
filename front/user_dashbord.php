@@ -1,21 +1,7 @@
-<?php
-session_start();
-if (!isset($_SESSION['user_id'])) {
-    header("Location: login.php");
-    exit();
-}
-?>
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<script>
-  history.pushState(null, null, location.href);
-  window.onpopstate = function () {
-    history.go(1);
-  };
-</script>
-
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Social Service Platform</title>
@@ -31,6 +17,7 @@ if (!isset($_SESSION['user_id'])) {
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700&display=swap" rel="stylesheet" />
   
   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
 
   <style>
     body {
@@ -276,7 +263,8 @@ main {
               <li class="nav-item"><a class="nav-link active" href="user_dashbord.php">Home</a></li>
               <li class="nav-item"><a class="nav-link" href="about.php">About Us</a></li>
               <li class="nav-item"><a class="nav-link" href="contact.php">Contact</a></li>
-              <li class="nav-item"><a class="nav-link" href="logout.php">Logout</a></li>
+              <li class="nav-item"><a class="nav-link" href="login.php">Login</a></li>
+              <li class="nav-item"><a class="nav-link" href="register.php">Register</a></li>
             </ul>
           </div>
         </div>
@@ -426,7 +414,14 @@ main {
       </section>
 
 
-     
+      <section class="cta-section">
+        <div class="container">
+          <h2>Become a Part of the Change</h2>
+          <p class="lead">Register now and start helping your community today.</p>
+          <a href="register.html" class="btn btn-light me-3">Register</a>
+          <a href="login.html" class="btn btn-outline-light">Login</a>
+        </div>
+      </section>
 
       <a href="report.php" class="fab"><i class="bi bi-camera-fill"></i></a>
 
@@ -558,6 +553,8 @@ main {
     document.body.classList.toggle('dark-mode');
   }
   </script>
+
+
 </body>
 </html>
 

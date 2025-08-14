@@ -47,7 +47,7 @@ $stmt = $conn->prepare("INSERT INTO reports (user_id, name, description, photo, 
 $stmt->bind_param("isssss", $user_id, $name, $description, $image_name, $location, $reported_at);
 
 if ($stmt->execute()) {
-    echo "<script>alert('📋 Report submitted successfully!'); window.location.href='user_dashbord.php';</script>";
+    echo "<script>alert('📋 Report submitted successfully!'); window.location.href='dashboard.php';</script>";
 } else {
     echo "Database error: " . $stmt->error;
 }
