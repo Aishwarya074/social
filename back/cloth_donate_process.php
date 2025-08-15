@@ -1,4 +1,5 @@
-<?php
+
+ <?php
 // cloth-donate-process.php
 
 // Start session if needed
@@ -74,3 +75,12 @@ if ($stmt->execute()) {
 $stmt->close();
 $conn->close();
 ?>
+
+
+
+
+
+
+
+
+
