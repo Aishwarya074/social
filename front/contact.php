@@ -115,7 +115,7 @@
         <li class="nav-item"><a class="nav-link" href="index.php">Home</a></li>
         <li class="nav-item"><a class="nav-link" href="about.php">About Us</a></li>
         <li class="btn btn-outline-primary rounded-pill px-4 fw-semibold"><a class="nav-link active" href="contact.php">Contact</a></li>
-        <li class="nav-item"><a class="nav-link" href="login.php">Login</a></li>
+        <li class="nav-item"><a class="nav-link" href="logout.php">Logout</a></li>
         <li class="nav-item"><a class="nav-link" href="register.php">Register</a></li>
       </ul>
     </div>

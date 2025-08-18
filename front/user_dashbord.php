@@ -263,7 +263,7 @@ main {
               <li class="nav-item"><a class="nav-link active" href="user_dashbord.php">Home</a></li>
               <li class="nav-item"><a class="nav-link" href="about.php">About Us</a></li>
               <li class="nav-item"><a class="nav-link" href="contact.php">Contact</a></li>
-              <li class="nav-item"><a class="nav-link" href="login.php">Login</a></li>
+              <li class="nav-item"><a class="nav-link" href="logout.php">Log out</a></li>
               <li class="nav-item"><a class="nav-link" href="register.php">Register</a></li>
             </ul>
           </div>
@@ -276,7 +276,7 @@ main {
           <h1>Empower Your Community</h1>
           <p class="lead">Connect with those in need and make a difference by reporting and donating effortlessly.</p>
           <div>
-            <a href="report.php" class="btn btn-light me-3 shadow">
+            <a href="report.php" class="btn btn-outline-light shadow">
               <i class="bi bi-camera-fill me-2"></i>Report Needy Person
             </a>
             <a href="donate.php" class="btn btn-outline-light shadow">
@@ -298,7 +298,7 @@ main {
                 <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=600&q=80" alt="Report" class="feature-image">
                 <i class="bi bi-camera-video feature-icon"></i>
                 
-                    <h4>Photo & Location Reporting</h4>
+                    <h4><b>Photo & Location Reporting</b></h4>
                     <p>Snap photos and tag locations of people in need to notify NGOs instantly.</p>
                   </a>
               </div>
@@ -309,7 +309,7 @@ main {
                 <a href="food_donate.php" class="btn btn-light me-3 shadow">
                 <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=600&q=80" alt="Food" class="feature-image">
                 <i class="bi bi-basket2 feature-icon"></i>
-                <h4>Leftover Food Donation</h4>
+                <h4><b>Leftover Food Donation</b></h4>
                 <p>Schedule pickup for extra food to help feed those in need.</p>
                  </a>
               </div>
@@ -320,7 +320,7 @@ main {
                 <a href="cloth_donate.php" class="btn btn-light me-3 shadow">
                 <img src="https://static.vecteezy.com/system/resources/previews/008/342/404/non_2x/clothes-donating-flat-design-long-shadow-glyph-icon-donation-box-with-t-shirt-used-clothes-charity-silhouette-illustration-vector.jpg?auto=format&fit=crop&w=600&q=80" alt="Cloth" class="feature-image">
                 <i class="bi bi-bag-heart feature-icon"></i>
-                <h4>Cloth Donation</h4>
+                <h4><b>Cloth Donation</b></h4>
                 <p>Donate wearable clothes in good condition to shelters and NGOs.</p>
                 </a>
               </div>
@@ -418,8 +418,8 @@ main {
         <div class="container">
           <h2>Become a Part of the Change</h2>
           <p class="lead">Register now and start helping your community today.</p>
-          <a href="register.html" class="btn btn-light me-3">Register</a>
-          <a href="login.html" class="btn btn-outline-light">Login</a>
+          <a href="register.php" class="btn btn-light me-3"><b>Register</b></a>
+          <a href="login.php" class="btn btn-light me-5"><b>Login</b></a>
         </div>
       </section>
 
@@ -437,7 +437,7 @@ main {
     </div>
     </div>
     </div>
-<footer class="pt-5 pb-4 text-white" style="background-color: #343a40;">
+<footer class="pt-5 pb-4 text-white" style="background-color: #3287dcff;">
   <div class="container-lg">
     <div class="row text-center text-md-start align-items-start">
       

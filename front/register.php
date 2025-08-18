@@ -17,39 +17,55 @@
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700&display=swap" rel="stylesheet" />
+  <style>
+   .navbar {
+      background: #ffffffcc;
+      backdrop-filter: saturate(180%) blur(20px);
+      box-shadow: 0 2px 15px rgba(13, 27, 42, 0.1);
+    }
+
+    .navbar-brand {
+      font-weight: 700; 
+      color: #007bff;
+      font-size: 1.8rem;
+    }
+
+    .nav-link {
+      color: #007bff;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    .nav-link:hover {
+      color: #0056b3;
+    }
+    </style>
 </head>
 <body>
+
+
+
+
 
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg fixed-top">
   <div class="container">
-    <a class="navbar-brand fw-bold text-primary" href="index.php">SocialService</a>
+    <a class="navbar-brand" href="index.php">SocialService</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto align-items-center gap-3">
-        <li class="nav-item">
-          <a class="nav-link text-primary hover-bg rounded-pill px-3 fw-semibold" href="index.php">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-primary hover-bg rounded-pill px-3 fw-semibold" href="about.php">About Us</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-primary hover-bg rounded-pill px-3 fw-semibold" href="contact.php">Contact</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-primary hover-bg rounded-pill px-3 fw-semibold " href="login.php">Login</a>
-        </li>
-        <li class="nav-item">
-          <a class=" btn btn-outline-primary rounded-pill px-4 fw-semibold" href="register.php">Register</a>
-        </li>
+      <ul class="navbar-nav ms-auto gap-3">
+        <li class="nav-item"><a class="nav-link" href="index.php">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.php">About Us</a></li>
+       <li class="nav-item"><a class="nav-link" href="contact.php">Contact</a></li>
+        <li class="nav-item"><a class="nav-link" href="logout.php">Logout</a></li>
+
+         <li class="btn btn-outline-primary rounded-pill px-4 fw-semibold"><a class="nav-link active" href="register.php">Register</a></li>
       </ul>
     </div>
   </div>
 </nav>
-
-
 
 <!-- Register Form -->
 <section class="py-5 mt-5">

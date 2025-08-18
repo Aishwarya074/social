@@ -198,14 +198,15 @@
         margin-bottom: 1rem;
 
     }
-
     footer {
-        background: #e3f2fd;
-        color: #0056b3;
-        padding: 1.25rem 0;
-        text-align: center;
-        font-weight: 600;
+      background: #e3f2fd;
+      color: #0056b3;
+      padding: 1.25rem 0;
+      text-align: center;
+      font-weight: 600;
+      
     }
+    
 
     .section-title {
         text-align: center;
@@ -281,7 +282,7 @@
                 <a href="login.php" class="btn btn-light me-3 shadow">
                     <i class="bi bi-camera-fill me-2"></i>Report Needy Person
                 </a>
-                <a href="login.php" class="btn btn-outline-light shadow">
+                <a href="login.php" class="btn btn-light me-3 shadow">
                     <i class="bi bi-box-seam me-2"></i>Donate Leftover Food
                 </a>
             </div>
@@ -303,7 +304,7 @@
                             <img src="https://static.vecteezy.com/system/resources/previews/015/311/212/non_2x/camera-photo-photography-lens-picture-location-pin-map-search-find-navigation-logo-design-vector.jpg"
                                 alt="Report" class="feature-image img-fluid rounded mb-3">
                             <i class="bi bi-camera-video feature-icon fs-1 text-primary"></i>
-                            <h4>Photo & Location Reporting</h4>
+                            <h4 class="mt-2 fw-bold">Photo & Location Reporting</h4>
                             <p>Snap photos and tag locations of people in need to notify NGOs instantly.</p>
                         </a>
                     </div>
@@ -316,26 +317,24 @@
                             <img src="https://images.creativemarket.com/0.1.0/ps/5060999/1820/1213/m1/fpnw/wm1/bjxpv4v2r17ncqokg9eadvsvxocrcej7g9lkiasaoggtdtujatnnazhqtl7paqof-.jpg?1537171780&s=f9388165d7feab2a224db28e4694b2c5"
                                 alt="Food" class="feature-image img-fluid rounded mb-3">
                             <i class="bi bi-basket2 feature-icon fs-1 text-primary"></i>
-                            <h4>Leftover Food Donation</h4>
+                            <h4 class="mt-2 fw-bold">Leftover Food Donation</h4>
                             <p>Schedule pickup for extra food to help feed those in need.</p>
                         </a>
                     </div>
                 </div>
 
-                <!-- Cloth Donation -->
-<div class="col-md-4">
-    <div class="feature-card text-center p-3 shadow rounded-4">
-        <a href="cloth_donate.php" class="d-block text-decoration-none text-dark">
-            <img src="https://www.shutterstock.com/shutterstock/photos/1109506814/display_1500/stock-vector-clothes-donating-glyph-icon-charity-silhouette-symbol-donation-box-with-t-shirt-used-clothes-1109506814.jpg"
-                alt="Cloth Donation" class="feature-image img-fluid rounded mb-3">
-            <i class="bi bi-bag-heart feature-icon fs-1 text-primary"></i>
-            <h4 class="mt-2 fw-bold">Cloth Donation</h4>
-            <p class="text-secondary mb-0">
-                Donate wearable clothes in good condition to shelters and NGOs.
-            </p>
-        </a>
-    </div>
-</div>
+                 <!-- Cloth Donation -->
+                <div class="col-md-4">
+                    <div class="feature-card text-center p-3 shadow rounded-4">
+                        <a href="login.php" class="d-block text-decoration-none text-dark">
+                            <img src="https://www.shutterstock.com/shutterstock/photos/1109506814/display_1500/stock-vector-clothes-donating-glyph-icon-charity-silhouette-symbol-donation-box-with-t-shirt-used-clothes-1109506814.jpg"
+                                alt="Cloth Donation" class="feature-image img-fluid rounded mb-3">
+                            <i class="bi bi-bag-heart feature-icon fs-1 text-primary"></i>
+                            <h4 class="mt-2 fw-bold">Cloth Donation</h4>
+                            <p class="text-secondary mb-0">Donate wearable clothes in good condition to shelters and NGOs.</p>
+                        </a>
+                    </div>
+                </div>
 
 
             </div>
@@ -361,40 +360,16 @@
             </div>
         </div>
     </section>
-
+<!--
     <section class="py-5">
         <div class="container">
             <h2 class="section-title" data-aos="fade-up">Find Nearby NGOs</h2>
             <div id="ngoMap" data-aos="fade-up" data-aos-delay="100"></div>
         </div>
     </section>
+-->
 
-
-    <section class="py-5 bg-light">
-        <div class="container">
-            <h2 class="section-title" data-aos="fade-up">What People Say</h2>
-            <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner text-center">
-                    <div class="carousel-item active">
-                        <blockquote>"This platform helped us feed 100+ people!"</blockquote>
-                        <p>- NGO Partner</p>
-                    </div>
-                    <div class="carousel-item">
-                        <blockquote>"I finally found a way to help my community."</blockquote>
-                        <p>- Volunteer</p>
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon"></span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon"></span>
-                </button>
-            </div>
-        </div>
-    </section>
+    
 
     <section class="py-5">
         <div class="container">
@@ -430,14 +405,40 @@
     </section>
 
 
-    <section class="cta-section">
+    <section class="py-5 bg-light">
         <div class="container">
-            <h2>Become a Part of the Change</h2>
-            <p class="lead">Register now and start helping your community today.</p>
-            <a href="register.html" class="btn btn-light me-3">Register</a>
-            <a href="login.html" class="btn btn-outline-light">Login</a>
+            <h2 class="section-title" data-aos="fade-up">What People Say</h2>
+            <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner text-center">
+                    <div class="carousel-item active">
+                        <blockquote>"This platform helped us feed 100+ people!"</blockquote>
+                        <p>- NGO Partner</p>
+                    </div>
+                    <div class="carousel-item">
+                        <blockquote>"I finally found a way to help my community."</blockquote>
+                        <p>- Volunteer</p>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
         </div>
     </section>
+
+    <section class="cta-section">
+        <div class="container">
+          <h2>Become a Part of the Change</h2>
+          <p class="lead">Register now and start helping your community today.</p>
+          <a href="register.php" class="btn btn-light me-3"><b>Register</b></a>
+          <a href="login.php" class="btn btn-light me-5"><b>Login</b></a>
+        </div>
+      </section>
 
     <a href="report.php" class="fab"><i class="bi bi-camera-fill"></i></a>
 
@@ -457,11 +458,11 @@
     </div>
 
 
-    <footer class="text-white pt-5" style="background: linear-gradient(to right, #007bff, #00bfff);">
+    <footer class="text-white pt-5" >   <!--style="background: linear-gradient(to right, #007bff, #00bfff);">-->
         <div class="container">
             <div class="row text-center text-md-start">
 
-
+<!--
                 <footer class="text-white pt-5" style="background: linear-gradient(to right, #00bfff, #007bff);">
                     <div class="container">
                         <div class="row text-center text-md-start">
@@ -512,7 +513,52 @@
                     </div>
                 </footer>
 
+-->
+                <footer class="text-white pt-5" style="background: linear-gradient(to right, #007bff, #00bfff);">
+  <div class="container">
+    <div class="row text-center text-md-start">
+      
+      <div class="col-md-4 mb-4">
+        <h5 class="fw-bold">SocialService</h5>
+        <p>Empowering communities through compassion, food, and clothing support. Join us in making a change.</p>
+        <div class="d-flex justify-content-center justify-content-md-start gap-3">
+          <a href="#" class="text-white"><i class="bi bi-facebook fs-4"></i></a>
+          <a href="#" class="text-white"><i class="bi bi-twitter-x fs-4"></i></a>
+          <a href="#" class="text-white"><i class="bi bi-instagram fs-4"></i></a>
+          <a href="#" class="text-white"><i class="bi bi-linkedin fs-4"></i></a>
+        </div>
+      </div>
 
+      <div class="col-md-4 mb-4">
+        <h5 class="fw-bold">Quick Links</h5>
+        <ul class="list-unstyled">
+          <li><a href="about.php" class="text-white text-decoration-none">About Us</a></li>
+          <li><a href="contact.php" class="text-white text-decoration-none">Contact</a></li>
+          <li><a href="register.php" class="text-white text-decoration-none">Register</a></li>
+          <li><a href="login.php" class="text-white text-decoration-none">Login</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <h5 class="fw-bold">Newsletter</h5>
+        <form>
+          <div class="input-group">
+            <input type="email" class="form-control" placeholder="Your email" aria-label="Email">
+            <button class="btn btn-light" type="submit"><i class="bi bi-envelope-fill"></i></button>
+          </div>
+        </form>
+        <small class="d-block mt-2">Stay updated with our mission.</small>
+      </div>
+
+    </div>
+
+    <hr class="border-light" />
+
+    <div class="text-center pb-3">
+      <small>&copy; 2025 Social Service Platform — Made with ❤ for a better world.</small>
+    </div>
+  </div>
+</footer>
 
 
                 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
