@@ -1,6 +1,15 @@
 
+<?php
+session_start();
 
- <!DOCTYPE html>
+if (!isset($_SESSION['user_id'])) {
+    // User not logged in, redirect to login page
+    header('Location: login.php');
+    exit();
+}
+?>
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />

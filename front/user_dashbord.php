@@ -264,7 +264,9 @@ main {
               <li class="nav-item"><a class="nav-link" href="about.php">About Us</a></li>
               <li class="nav-item"><a class="nav-link" href="contact.php">Contact</a></li>
               <li class="nav-item"><a class="nav-link" href="logout.php">Log out</a></li>
-              <li class="nav-item"><a class="nav-link" href="register.php">Register</a></li>
+
+             <!-- <li class="nav-item"><a class="nav-link" href="register.php">Register</a></li>-->
+              
             </ul>
           </div>
         </div>
@@ -418,7 +420,9 @@ main {
         <div class="container">
           <h2>Become a Part of the Change</h2>
           <p class="lead">Register now and start helping your community today.</p>
+
           <a href="register.php" class="btn btn-light me-3"><b>Register</b></a>
+
           <a href="login.php" class="btn btn-light me-5"><b>Login</b></a>
         </div>
       </section>
