@@ -281,7 +281,7 @@ main {
             <a href="report.php" class="btn btn-outline-light shadow">
               <i class="bi bi-camera-fill me-2"></i>Report Needy Person
             </a>
-            <a href="donate.php" class="btn btn-outline-light shadow">
+            <a href="food_donate.php" class="btn btn-outline-light shadow">
               <i class="bi bi-box-seam me-2"></i>Donate Leftover Food
             </a>
           </div>
